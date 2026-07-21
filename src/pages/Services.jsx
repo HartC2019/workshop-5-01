@@ -1,20 +1,36 @@
+import ServiceCard from "../components/ServiceCard";
+
 function Services() {
   return (
-    <>
+    <section>
       <h1>Our Services</h1>
 
-      <h3>Airport Transportation</h3>
-      <p>Reliable rides to and from the airport.</p>
+      <div className="card-grid">
+        <ServiceCard
+          icon="✈️"
+          title="Airport Transfer"
+          description="Reliable transportation to and from the airport."
+        />
 
-      <h3>City Rides</h3>
-      <p>Quick transportation anywhere in town.</p>
+        <ServiceCard
+          icon="🏙️"
+          title="City Ride"
+          description="Quick transportation anywhere around town."
+        />
 
-      <h3>Luxury Service</h3>
-      <p>Premium vehicles for special occasions.</p>
+        <ServiceCard
+          icon="💼"
+          title="Corporate Travel"
+          description="Professional transportation for business travelers."
+        />
 
-      <h3>Corporate Travel</h3>
-      <p>Transportation for business professionals.</p>
-    </>
+        <ServiceCard
+          icon="🚘"
+          title="Luxury Ride"
+          description="Premium vehicles for special occasions."
+        />
+      </div>
+    </section>
   );
 }
 

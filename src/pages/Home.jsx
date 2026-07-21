@@ -1,18 +1,40 @@
+import Hero from "../components/Hero";
+import ServiceCard from "../components/ServiceCard";
+
 function Home() {
   return (
     <>
-      <h1>Book Your Ride Today</h1>
+      <Hero />
 
-      <p>Fast, safe, and reliable transportation whenever you need it.</p>
+      <section className="features">
+        <h2>Why Choose Us?</h2>
 
-      <h3>Why Choose Us?</h3>
+        <div className="card-grid">
+          <ServiceCard
+            icon="🚖"
+            title="Professional Drivers"
+            description="Experienced drivers focused on safety and customer service."
+          />
 
-      <ul>
-        <li>🚖 Professional Drivers</li>
-        <li>🕒 24/7 Service</li>
-        <li>💳 Affordable Pricing</li>
-        <li>📍 Airport & Local Transportation</li>
-      </ul>
+          <ServiceCard
+            icon="🕒"
+            title="24/7 Availability"
+            description="Book transportation any time, day or night."
+          />
+
+          <ServiceCard
+            icon="💰"
+            title="Affordable Rates"
+            description="Competitive pricing without sacrificing quality."
+          />
+
+          <ServiceCard
+            icon="⭐"
+            title="Trusted Service"
+            description="Reliable transportation trusted by our customers."
+          />
+        </div>
+      </section>
     </>
   );
 }
